@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'roboto mono';
+  box-sizing: border-box;
+  background-color: #0F1212;
+}
+
+@font-face {
+  font-family: 'roboto mono';
+  src: url('./fonts/RobotoMono-VariableFont_wght.ttf');
+}
+
+video {
+  background-image: url('./assets/loader.png')
+}
+
+.times {
+  font-family: 'Times New Roman', Times, serif
+}
+
+.appear {
+  opacity: 1;
+  transform: translateX(40px);
+  transition: 0.6s;
+}
+
+.disappear {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: 0.6s;
+}
